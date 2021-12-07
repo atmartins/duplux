@@ -1,0 +1,81 @@
+{
+  "name": "duplux",
+  "version": "0.0.1",
+  "description": "Plugin-based application library with state management over a two-way connection",
+  "main": "index.js",
+  "bugs": "https://github.com/atmartins/duplux/issues",
+  "homepage": "https://github.com/atmartins/duplux",
+  "repository": "github:atmartins/duplux",
+  "keywords": [
+    "websockets",
+    "plugin",
+    "library",
+    "state",
+    "two-way"
+  ],
+  "contributors": [
+    {
+      "name": "Aaron Martins",
+      "email": "me@aaronmartins.com",
+      "url": "https://aaronmartins.com"
+    },
+    {
+      "name": "Nolan Price",
+      "email": "nolan@nolanprice.com",
+      "url": "https://nolanprice.com/"
+    },
+    {
+      "name": "Travis Barnes",
+      "email": "travis@redmustard.io",
+      "url": "https://redmustard.io/"
+    }
+  ],
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "NODE_ENV=production webpack",
+    "start-server": "nodemon src/example-app/server/index.ts",
+    "start-client": "NODE_ENV=development webpack serve"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/plugin-proposal-class-properties": "^7.16.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.16.0",
+    "@babel/plugin-transform-arrow-functions": "^7.16.0",
+    "@babel/plugin-transform-async-to-generator": "^7.16.0",
+    "@babel/plugin-transform-runtime": "^7.16.4",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-react": "^7.16.0",
+    "@babel/preset-typescript": "^7.16.0",
+    "@babel/register": "^7.16.0",
+    "@babel/runtime": "^7.16.3",
+    "@types/jsonpath": "^0.2.0",
+    "@types/node": "^16.11.10",
+    "@types/react": "^17.0.37",
+    "@types/react-dom": "^17.0.11",
+    "@types/react-redux": "^7.1.20",
+    "@types/ws": "^8.2.1",
+    "babel-loader": "^8.2.3",
+    "copy-webpack-plugin": "^10.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "ignore-styles": "^5.0.1",
+    "mini-css-extract-plugin": "^2.4.5",
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.15",
+    "sass-loader": "^12.3.0",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2",
+    "webpack": "^5.64.4",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.6.0"
+  },
+  "dependencies": {
+    "deep-object-diff": "^1.1.0",
+    "jsonpath": "^1.1.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.6",
+    "redux": "^4.1.2",
+    "ws": "^8.3.0"
+  }
+}

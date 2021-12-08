@@ -33,6 +33,6 @@ By sharing a copy of the exact same reducer in both the client and server, as lo
 **Shared Store**: For data that is useful in both client and server, use the shared store. Dispatching the action from either the client OR the server will cause both copies of this store to update.
 
 ## Roadmap
-- Separate framework from example app
+- [Use Lerna](https://github.com/lerna/lerna)
 - Add connection "channels" to isolate stores
 - Authentication
